@@ -1,0 +1,46 @@
+.main-slide {
+  height: auto;
+
+  &__image {
+    // margin: 0 auto;
+    height: 500px;
+    width: auto;
+    img {
+      height: 500px;
+    }
+  }
+}
+
+.carousel .slider-wrapper {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel .thumb {
+  width: 5%;
+  height: 50px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 993px) {
+  .main-slide {
+    // margin-top: -30px;
+    // z-index: -1;
+    // position: absolute;
+  }
+}
+
+.carousel .slide img {
+  max-height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.thumb img {
+  width: 80px;
+  height: 50px;
+}
