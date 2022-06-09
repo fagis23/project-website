@@ -5,7 +5,7 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer__left">
         <div className="footer__left__logo">
           <img alt="Loading" src={logo} />
@@ -17,7 +17,15 @@ const Footer = () => {
             Barat, Indonesia, 17412
           </span>
         </div>
-        <div className="footer__left__icon">
+        <div
+          className="footer__left__icon"
+          onClick={() => {
+            window.open(
+              "https://www.linkedin.com/company/pt-sinar-bumi-sejahtera ",
+              "_blank"
+            );
+          }}
+        >
           <img alt="Loading" src={linkedin} />
         </div>
       </div>
@@ -30,7 +38,7 @@ const Footer = () => {
             <span>Email: sinarbumisejahtera@gmail.com</span>
           </div>
           <div className="footer__right__title__item">
-            <span>Telp: 021-86905292 </span>
+            <span>Telp: 081333000198 </span>
           </div>
           <div className="footer__right__title__item">
             <span>Fax: 021- 86906002 </span>
